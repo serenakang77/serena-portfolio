@@ -1,0 +1,74 @@
+@mixin sectionFormat(){
+     border-radius: 50px;
+    
+    background-color: white;
+    color: rgb(36, 36, 36);
+    // background-color: #242526;
+    padding: 60px;
+    filter:drop-shadow(0px 0px 15px #deb1df);
+    
+}
+
+@mixin buttonFormat(){
+    background-color: #74726b;
+    padding: 10px 20px;
+    margin: 15px 10px 15px 0;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+@mixin left-slide-in-animation($left-value, $animation-time){
+    @keyframes animation {
+        0% {
+            opacity: 0;
+            left: $left-value;
+            // left: -15%;
+        }
+
+        100% {
+            opacity: 1;
+            left: 0;
+        }
+    }
+    .animation-left {
+      position: relative;
+      animation: animation $animation-time ease-out;
+    }
+};
+
+@mixin right-slide-in-animation($right-value, $animation-time){
+    @keyframes animationRight {
+        0% {
+            opacity: 0;
+            left: $right-value;
+            // left: -15%;
+        }
+
+        100% {
+            opacity: 1;
+            left: 0;
+        }
+    }
+    .animation-right {
+      position: relative;
+      animation: animationRight $animation-time ease-out;
+    }
+}
+
+@mixin top-slide-in-animation($top-value, $animation-time){
+    @keyframes animationTop {
+        0% {
+            opacity: 0;
+            top: $top-value;
+        }
+
+        100% {
+            opacity: 1;
+            top: 0;
+        }
+    }
+    .animation-top {
+      position: relative;
+      animation: animationTop $animation-time ease-out;
+    }
+}

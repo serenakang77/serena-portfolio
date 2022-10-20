@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/8f523b1737.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;500;600&family=Roboto:wght@700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("h8Opj6R8nMRkvcTw2");
+    })();
+    </script>
+
+</head>
+<body class="main-darkmode-off">
+    <header class="darkmode-off">
+    <!-- <header class="darkmode-on"> -->
+        <nav class="main-nav">
+            <div class="wrapper nav-bar">
+                <a href="./index.html" class="serena-logo"><img src="./assets/sk-logo4.png" alt="Serena Kang Logo"></a>
+                <ul class="flex-container">
+                    <li><a href="#introduction">About me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="">Contact</a></li>
+                    <!-- <li><a href="">Resume</a></li> -->
+                </ul>
+                <input id="dark-mode-switch" class="dark-mode-switch" type="checkbox">
+                <label for="dark-mode-switch" class="switch" title="Switch to Light Mode">
+                    <div id="star">
+                        <div class="star" id="star-1">★</div>
+                        <div class="star" id="star-2">★</div>
+                    </div>
+                    <div id="moon"></div>
+                </label>
+                <button id="menu-button" class="menu-button">
+                    <i>A</i>
+                </button>
+            </div>
+        </nav>
+        <div class="header-container">
+            <div class="header-image-animation">
+                <img src="./assets/sun-picture5.png" alt="sun image picture" class="sun-picture ball-container">
+                <div class="ball-shadow"></div>
+            </div>
+            <div class="title-container header-wrapper">
+                <h1 class="animation-left">Hello,<br> I'm <span class="highlight">Serena Kang.</span></h1>
+                <h3 class="animation-delay">Front-End Developer.</h3>
+            </div>
+        </div>
+        <!-- slide-bar -->
+        <nav>
+            <ul class="slide-bar">
+                <!-- change it to this class when user clicks -->
+                <!-- <li><a href=""><i class="fa-solid fa-circle"></i></a></li> -->
+                <li><a href="#introduction"><i class="fa-regular fa-circle"></i></a></li>
+                <li><a href="#skills"><i class="fa-regular fa-circle"></i></a></li>
+                <li><a href="#projects"><i class="fa-regular fa-circle"></i></a></li>
+                <li><a href="#contact"><i class="fa-regular fa-circle"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <!-- <main class="main-darkmode-on main-darkmode-off"> -->
+        <section id= "introduction" class="inner-wrapper">
+            <h2>About Me</h2>
+            <div class="introduction-container flex-container">
+                <div class="introduction-img-container">
+                    <img src="./assets/serena-kang-photo.jpg" alt="My profile photo">
+                </div>
+                <div class="introduction-text-container animation-top-selection">
+                    <p>Hi there!👋 Thanks for stopping by. My name is Serena, and I'm a Front-End Developer who is passionate for building responsive and accessible websites. As a recent graduate of Juno College of Technology, I'm thrilled to join the tech industry where I can continue to learn and grow.</p>
+                    <p>Prior to my transition into web development, I was in logistics industry where I developed strong interpersonal, critical thinking, teamwork, and problem-solving skills.</p>
+                    <p>When I'm not coding, you can find me going on hikes🌄, trying new restaurants🍜, and playing games(League of Legends)💻.</p>
+                </div>
+            </div>
+            <div id="skills" class="skills-container animation-top-selection">
+                <h2>Skills</h2>
+                <ul>
+                    <li>
+                        <i class="fab fa-html5" title="HTML5" aria-hidden="true"></i>
+                        <p>HTML5</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-css3-alt" title="CSS3" aria-hidden="true"></i>
+                        <p>CSS3</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-sass" title="SASS" aria-hidden="true"></i>
+                        <p>SASS</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-js-square" title="JavaScript" aria-hidden="true"></i>
+                        <p>JavaScript</p>
+                    </li>
+                    <li>
+                        <i class="devicon-jquery-plain-wordmark" title="jQuery"></i>
+                        <p>jQuery</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-react" title="React" aria-hidden="true"></i>
+                        <p>React</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-mobile-alt" title="Responsive Design" aria-hidden="true"></i>
+                        <p>Responsive Design</p>
+                    </li>
+                    <li>
+                        <i class="devicon-firebase-plain" title="Firebase" aria-hidden="true"></i>
+                        <p>Firebase</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-git-square" title="Git" aria-hidden="true"></i>
+                        <p>Git</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-cogs" title="RESTful API" aria-hidden="true"></i>
+                        <p>RESTful API</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-universal-access" title="Accessibility" aria-hidden="true"></i>
+                        <p>Accessibility</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-terminal" title="Terminal" aria-hidden="true"></i>
+                        <p>Terminal</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="projects" class="inner-wrapper">
+            <h2>Projects</h2>
+            <div class="projects-list">
+                <div class="projects-border animation-left-selection">
+                    <article class="projects">
+                        <img src="./assets/project2-picture-2.png" alt="The Movie Marathon project">
+                        <div class="project-content">
+                            <h4>List Flicks</h4>
+                            <p>Built the responsive ListFlicks app which allows the user to search any movies, and add it to the movie list. Requesting the data from API for 3 relevant movie titles with the poster image and years, users can see the details of the movie when they click read more button.</p>
+                            <div class="projectSkills">
+                                <i class="fab fa-html5" title="HTML 5" aria-hidden="true"></i><span class="sr-only">HTML 5</span>
+                                <i class="fab fa-css3-alt" title="CSS 3" aria-hidden="true"></i><span class="sr-only">CSS 3</span>
+                                <i class="fab fa-sass" title="Sass" aria-hidden="true"></i><span class="sr-only">Sass</span>
+                                <i class="fa-brands fa-js" title="Javascript"></i><span class="sr-only">Javascript</span>
+                                <i class="fas fa-cog" title="REST API" aria-hidden="true"></i><span class="sr-only">REST API</span>
+                            </div>
+                            <a href="https://github.com/serenakang77/movie-marathon-list-app" class="github-button">GitHub</a>
+                            <a href="https://listflicks.netlify.app/" class="live-button">Live Site</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="projects-border animation-left-selection">
+                    <article class="projects">
+                        <img src="./assets/project1-picture-1.png" alt="The Restaurant Mall project">
+                        <div class="project-content">
+                            <h4>The Restaurant Mall</h4>
+                            <p>Created a multi-page responsive and accessible website by using SASS. Created the hamburger menu on the mobile app to open the side menu, made the comments form function when the user inputs their name and comment in the blog page.</p>
+                            <div class="projectSkills">
+                                <i class="fab fa-html5" title="HTML 5" aria-hidden="true"></i><span class="sr-only">HTML 5</span>
+                                <i class="fab fa-css3-alt" title="CSS 3" aria-hidden="true"></i><span class="sr-only">CSS 3</span>
+                                <i class="fab fa-sass" title="Sass" aria-hidden="true"></i><span class="sr-only">Sass</span>
+                                <i class="fa-brands fa-js" title="Javascript"></i><span class="sr-only">Javascript</span>
+                            </div>
+                            <a href="https://github.com/serenakang77/serena-kang-project-1-the-restaurant-mall" class="github-button">GitHub</a>
+                            <a href="https://tarot-time-app.netlify.app" class="live-button">Live Site</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="projects-border animation-left-selection">
+                    <article class="projects">
+                        <img src="./assets/project3-picture.png" alt="Cocktail project">
+                        <div class="project-content">
+                            <h4>Cocktail Bar</h4>
+                            <p>Created a responsive and accessible cocktail bar website. Built this app to show the user how to make the cocktails, it gives the information of the name, ingredients, and instructions of how to make cocktails. Used API to get the data, and used jQuery to make it functional website.</p>
+                            <div class="projectSkills">
+                                <i class="fab fa-html5" title="HTML 5" aria-hidden="true"></i><span class="sr-only">HTML 5</span>
+                                <i class="fab fa-css3-alt" title="CSS 3" aria-hidden="true"></i><span class="sr-only">CSS 3</span>
+                                 <i class="devicon-jquery-plain" title="jQuery"></i><span class="sr-only">Sass</span>
+                                 <i class="fas fa-cog" title="REST API" aria-hidden="true"></i><span class="sr-only">REST API</span>
+                            </div>
+                            <a href="https://github.com/serenakang77/cocktail-project" class="github-button">GitHub</a>
+                            <a href="https://serena-cocktail-bar.netlify.app/" class="live-button">Live Site</a>
+                        </div>
+                    </article>
+                </div>
+                <!-- <i class="fa-brands fa-react" title="React"></i> -->
+            </div>
+        </section>
+        <section class="inner-wrapper">
+            <h2 id="contact">Contact Me</h2>
+            <div class="contact-container">
+                <div class="contact-form animation-left-selection">
+                    
+                    <p>Thank you for visiting my website! If you have any questions about me or my projects, please send me a message below or email at serenakang77@gmail.com.</p>
+                    <form id="contact-form" onsubmit="contact(event)">
+                        <label class="sr-only" for="name">Enter your name</label>
+                        <input id="name" name="user-name" type="text" placeholder="Type your name" required="">
+                        <label class="sr-only" for="email">Enter your email</label>
+                        <input id="email" name="user-email" type="text" placeholder="Type your email" required="">
+                        <label class="sr-only" for="message">Write a message</label>
+                        <textarea id="message" name="message" cols="52" rows="10" placeholder="Type your message" required=""></textarea>
+                        <button class="sub-button" type="submit" id="submit-button">Send Message</button>
+                    </form>
+                    <div class="social">
+                        <li>
+                        <a href="mailto:serenakang77@gmail.com" aria-label="Email Link"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                        <a href="https://www.linkedin.com/in/serena-kang-0443941b2/" aria-label="LinkedIn Link"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                        <a href="https://github.com/serenakang77" aria-label="GitHub Link"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+                        </li>
+                    </div>
+                </div>
+                <div class="contact-image">
+                    <img src="./assets/serena-kang-photo2.jpg" alt="Plants picture">
+                </div>
+            </div>
+            <div class="icon-box">
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Created and Designed by Serena Kang</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
