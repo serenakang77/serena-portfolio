@@ -32,6 +32,9 @@ html{
             &:hover,&:focus{
                 color: #f9d71c;
                 // color: #bc7eff;
+                p{
+                    text-align: center;
+                }
             }
         }
     }
@@ -92,7 +95,7 @@ main{
         
         .introduction-text-container{
             width: 65%;
-            margin: 0px 20px;
+            margin: 0px 25px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -214,7 +217,7 @@ main{
         width: 50%;
         img{
             width: 80%;
-            height: 570px;
+            height: 600px;
             margin: 0 10%;
             border-radius: 40px;
             box-shadow: 12px 8px 8px rgba(109, 103, 103, 0.3);

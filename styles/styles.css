@@ -263,7 +263,7 @@ li {
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: clamp(3rem, 10vw, 6rem);
   margin: 0;
   text-shadow: 10px 10px rgba(173, 154, 200, 0.3);
 }
@@ -281,12 +281,12 @@ h4 {
 
 h3 {
   text-shadow: 5px 5px rgba(173, 154, 200, 0.3);
-  font-size: 1.5rem;
-  margin: 0px;
+  font-size: clamp(1.2rem, 5vw, 1.6rem);
+  margin: 0 0 0 5px;
 }
 
 p {
-  font-size: clamp(0.8rem, 1.3vw, 1rem);
+  font-size: clamp(0.9rem, 1.3vw, 1.1rem);
 }
 
 .flex-container {
@@ -614,7 +614,6 @@ header .animation-delay {
 .slide-bar li {
   padding-top: 20px;
 }
-
 html {
   scroll-behavior: smooth;
 }
@@ -641,6 +640,9 @@ html {
 }
 .main-darkmode-on .skills-container li:hover, .main-darkmode-on .skills-container li:focus {
   color: #f9d71c;
+}
+.main-darkmode-on .skills-container li:hover p, .main-darkmode-on .skills-container li:focus p {
+  text-align: center;
 }
 .main-darkmode-on .project-content a:hover, .main-darkmode-on .project-content a:focus {
   background-color: #F9D71C;
@@ -749,7 +751,7 @@ main .introduction-container .introduction-img-container img {
 }
 main .introduction-container .introduction-text-container {
   width: 65%;
-  margin: 0px 20px;
+  margin: 0px 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -869,7 +871,7 @@ main .contact-image {
 }
 main .contact-image img {
   width: 80%;
-  height: 570px;
+  height: 600px;
   margin: 0 10%;
   border-radius: 40px;
   box-shadow: 12px 8px 8px rgba(109, 103, 103, 0.3);
