@@ -74,7 +74,7 @@ main{
         }
         
         // @include top-slide-in-animation(7%, 1s);
-        @include left-slide-in-animation(70px, 1.5s);
+        @include left-slide-in-animation(-70px, 1.5s);
         @include right-slide-in-animation(70px, 1.5s);
         @include top-slide-in-animation(70px, 1.5s);
         @include sectionFormat();
@@ -126,6 +126,9 @@ main{
                 &:hover,&:focus{
                     color: #bc7eff;
                     transform: scale(1.15);
+                }
+                p{
+                    text-align: center;
                 }
             }
             i{

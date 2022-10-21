@@ -237,22 +237,6 @@ header{
         transition: 0.3s ease bottom;
     }
 
-    // #moon:before{
-    //     content: "";
-    //     position: absolute;
-    //     top: -14px;
-    //     left: -18px;
-    //     width: 40px;
-    //     height: 40px;
-    //     background-color: rgba(67, 66, 66, 0.5);
-    //     border-radius: 50%;
-    //     transition: 0.3s ease background-color;
-    // }
-
-    // #dark-mode-switch:checked + label{
-    //     background-color: rgb(159, 120, 207);
-    // }
-
     #dark-mode-switch:checked + label #star{
         top: 0px;
         left: 36px;
@@ -268,75 +252,9 @@ header{
         bottom: 8px;
     }
 
-    // #dark-mode-switch:checked + label #moon:before{
-    //     background-color: rgb(159, 120, 207);
-    // }
-    .ball-container {
-      margin: auto;
-      animation: floating 4s ease-in-out infinite;
-      border-radius: 50%;
-      position: relative;
-    }
-
-    @keyframes floating {
-        0% {
-            transform: translatey(30px);
-        }
-
-        50% {
-            transform: translatey(-10px);
-        }
-
-        100% {
-            transform: translatey(30px);
-        }
-    }
-
-    .ball-shadow {
-      width: 95px;
-      height: 30px;
-      top: 50%;
-      animation: expanding 4s infinite;
-      position: relative;
-      border-radius: 50%;
-      margin: auto;
-      background: radial-gradient(circle at 75% 30%, rgb(221 215 243) 5px, rgb(36, 187, 187) 8%, rgb(228, 26, 26) 60%, rgb(173, 221, 221) 100%);
-      box-shadow: inset 0 0 20px #fff, inset 10px 0 46px #3f51b500, inset 88px 0px 60px #ffffff99, inset -20px -60px 100px #5b43e791, inset 0 50px 140px #ffffff, 0 0 90px #39316b;
-    }
-
-    @keyframes expanding {
-        0%,
-        100% {
-            transform: scale(0.5);
-        }
-
-        50% {
-            transform: scale(0.75);
-        }
-    }
-
-    @include left-slide-in-animation(-30%, 1.2s);
-    .animation-delay{
-        animation: animation1 2.4s ease-out;
-        position: relative;
-    }
-
-    @keyframes animation1 {
-    0% {
-        opacity: 0;
-        left: -30%;
-    }
-    50%{
-        opacity: 0;
-        left: -30%;
-
-    }
-
-    100% {
-        opacity: 1;
-        left: 0;
-    }
-    }
+    @include moon-animation();
+    @include header-left-animation(1.2s);
+    
 }
 
 .slide-bar{

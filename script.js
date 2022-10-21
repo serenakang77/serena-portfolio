@@ -3,36 +3,28 @@ const portfolio = {};
 portfolio.darkMode = function(){
     const darkModeButton = document.getElementById("dark-mode-switch")
     darkModeButton.addEventListener("click", function(){
+        
         const headerBackground = document.querySelector("header")
-        headerBackground.classList.toggle("darkmode-on")
-        // headerBackground.classList.toggle("darkmode-off")
         const bodyBackground = document.querySelector("body")
+        const darkModeButtonImage = document.querySelector(".header-image-animation img")
+
+        headerBackground.classList.toggle("darkmode-on")
         bodyBackground.classList.toggle("main-darkmode-on")
-        // bodyBackground.classList.toggle("main-darkmode-off")
-        const logoElement = document.querySelector(".serena-logo")
-        const inputElement = document.getElementById("dark-mode-switch")
-        console.log(inputElement.checked);
-        const darkModeButtonImage =
-        document.querySelector(".header-image-animation img")
-        const darkModeButtonElement = document.querySelector(
-          ".header-image-animation"
-        )
         darkModeButtonImage.classList.toggle("moon-picture")
-        // if(darkModeButtonImage.className === "moon-picture"){
+
+        const logoElement = document.querySelector(".serena-logo")
+        const darkModeButtonElement = document.querySelector(".header-image-animation")
+
         if (
           darkModeButtonImage.className ===
           "sun-picture ball-container moon-picture"
         ) {
-          // inputElement.checked = false
-          console.log(darkModeButtonImage)
           darkModeButtonElement.innerHTML = `
           <img src="./assets/moon-picture.png" alt="moon image picture" class="moon-picture ball-container">
           <div class="ball-shadow"></div>
           `
           logoElement.innerHTML = `<img src=\"./assets/sk-logo3.png\" alt=\"Serena Kang Logo\">`
         } else {
-          console.log(darkModeButtonImage)
-          //   inputElement.checked = true
           darkModeButtonElement.innerHTML = `
           <img src="./assets/sun-picture5.png" alt="sun image picture" class="sun-picture ball-container">
           <div class="ball-shadow"></div>
@@ -65,29 +57,6 @@ function reveal(className, animationClassName) {
   window.addEventListener("scroll", () => {return reveal(".animation-top-selection", "animation-top")})
 // }
 
-
-
-// function contact(event){
-//   event.preventDefault();
-//   const inputElement = document.querySelectorAll("input")
-//   console.log(inputElement);
-//   const textElement = document.getElementById("message")
-//   emailjs
-//   .sendForm(
-//       'service_ev7a5kn',
-//       'template_2gyynww',
-//       event.target,
-//       'h8Opj6R8nMRkvcTw2'
-//       ).then(() => {
-//           alert("Email has been sent!")
-//         }).catch(() =>{
-//             alert("email is temporarily unavailable. Please contact me on serenakang77@gmail.com")
-//         })
-//     inputElement[0].value=""
-//     inputElement[1].value=""
-//     textElement.value = ""
-// }
-
 portfolio.menuElement = document.querySelector(".menu-bar")
 portfolio.menuBarButton = document.querySelector(".menu-bar-button")
 portfolio.closeButton = document.querySelector(".close-button")
@@ -96,6 +65,7 @@ portfolio.menuBarButton.addEventListener("click", function () {
   portfolio.menuElement.style.visibility = "visible"
   portfolio.menuElement.style.opacity = "1"
   portfolio.menuBarButton.style.visibility = "hidden"
+  portfolio.menuMove()
 })
 
 portfolio.closeButton.addEventListener("click", function () {
@@ -105,12 +75,30 @@ portfolio.closeButton.addEventListener("click", function () {
   portfolio.menuElement.style.transition = "visibility 0.5s, opacity 0.5s linear"
 })
 
-portfolio.events = () => {
-
+portfolio.menuMove = function(){
+  const website = document.querySelectorAll(".menu-bar a")
+  console.log(website);
+  website.forEach((data) => {
+    data.addEventListener("click", function(){
+      portfolio.menuBarButton.style.visibility = "visible"
+      portfolio.menuElement.style.visibility = "hidden"
+      portfolio.menuElement.style.opacity = "0"
+      portfolio.menuElement.style.transition =
+        "visibility 0.5s, opacity 0.5s linear"
+    })
+  })
 }
 
-portfolio.init = () => {
+  // portfolio.test = (event) => {
+  //   console.log(event.target);
+  //   event.target.addEventListener("click", function(){
+  //     console.log("Wow");
+  //   })
+  // }
+  
+  portfolio.init = () => {
     portfolio.darkMode()
+    
     // portfolio.observer()
     // portfolio.sendEmail()
 }
