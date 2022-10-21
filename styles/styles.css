@@ -715,7 +715,7 @@ main section .animation-left-selection, main section .animation-right-selection,
 @keyframes animation {
   0% {
     opacity: 0;
-    transform: translateX(-50px);
+    transform: translateX(-70px);
   }
   100% {
     opacity: 1;
@@ -724,14 +724,14 @@ main section .animation-left-selection, main section .animation-right-selection,
 }
 main section .animation-left {
   position: relative;
-  -webkit-animation: animation 1s ease-out;
-          animation: animation 1s ease-out;
+  -webkit-animation: animation 1.5s ease-out;
+          animation: animation 1.5s ease-out;
   opacity: 1;
 }
 @-webkit-keyframes animationRight {
   0% {
     opacity: 0;
-    transform: translateX(50px);
+    transform: translateX(70px);
   }
   100% {
     opacity: 1;
@@ -741,7 +741,7 @@ main section .animation-left {
 @keyframes animationRight {
   0% {
     opacity: 0;
-    transform: translateX(50px);
+    transform: translateX(70px);
   }
   100% {
     opacity: 1;
@@ -750,14 +750,14 @@ main section .animation-left {
 }
 main section .animation-right {
   position: relative;
-  -webkit-animation: animationRight 1s ease-out;
-          animation: animationRight 1s ease-out;
+  -webkit-animation: animationRight 1.5s ease-out;
+          animation: animationRight 1.5s ease-out;
   opacity: 1;
 }
 @-webkit-keyframes animationTop {
   0% {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(70px);
   }
   100% {
     opacity: 1;
@@ -767,7 +767,7 @@ main section .animation-right {
 @keyframes animationTop {
   0% {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(70px);
   }
   100% {
     opacity: 1;
@@ -776,8 +776,8 @@ main section .animation-right {
 }
 main section .animation-top {
   position: relative;
-  -webkit-animation: animationTop 1s ease-out;
-          animation: animationTop 1s ease-out;
+  -webkit-animation: animationTop 1.5s ease-out;
+          animation: animationTop 1.5s ease-out;
   opacity: 1;
 }
 main section h2 {

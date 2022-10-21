@@ -74,9 +74,9 @@ main{
         }
         
         // @include top-slide-in-animation(7%, 1s);
-        @include left-slide-in-animation(50px, 1s);
-        @include right-slide-in-animation(50px, 1s);
-        @include top-slide-in-animation(50px, 1s);
+        @include left-slide-in-animation(70px, 1.5s);
+        @include right-slide-in-animation(70px, 1.5s);
+        @include top-slide-in-animation(70px, 1.5s);
         @include sectionFormat();
         h2{
             // margin-bottom: 30px;
