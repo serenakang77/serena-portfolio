@@ -133,11 +133,16 @@
         }
     }
     main{
-        section h2{
-            text-align: center;
-            margin: 0;
-            padding: 30px 0 10px 0;
-        }
+        section{
+            @include top-slide-in-animation(7%, 2s);
+            @include left-slide-in-animation(-7%, 2s);
+            @include right-slide-in-animation(7%, 2s);
+            h2{
+                text-align: center;
+                margin: 0;
+                padding: 30px 0 10px 0;
+            }
+        } 
         .introduction-container{
             .introduction-img-container{
                 width: 75%;

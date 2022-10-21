@@ -1038,6 +1038,81 @@ main .contact-image img {
   header .main-nav .nav-bar .serena-logo img {
     width: 85px;
   }
+  @-webkit-keyframes animationTop {
+    0% {
+      opacity: 0;
+      top: 7%;
+    }
+    100% {
+      opacity: 1;
+      top: 0;
+    }
+  }
+  @keyframes animationTop {
+    0% {
+      opacity: 0;
+      top: 7%;
+    }
+    100% {
+      opacity: 1;
+      top: 0;
+    }
+  }
+  main section .animation-top {
+    position: relative;
+    -webkit-animation: animationTop 2s ease-out;
+            animation: animationTop 2s ease-out;
+  }
+  @-webkit-keyframes animation {
+    0% {
+      opacity: 0;
+      left: -7%;
+    }
+    100% {
+      opacity: 1;
+      left: 0;
+    }
+  }
+  @keyframes animation {
+    0% {
+      opacity: 0;
+      left: -7%;
+    }
+    100% {
+      opacity: 1;
+      left: 0;
+    }
+  }
+  main section .animation-left {
+    position: relative;
+    -webkit-animation: animation 2s ease-out;
+            animation: animation 2s ease-out;
+  }
+  @-webkit-keyframes animationRight {
+    0% {
+      opacity: 0;
+      left: 7%;
+    }
+    100% {
+      opacity: 1;
+      left: 0;
+    }
+  }
+  @keyframes animationRight {
+    0% {
+      opacity: 0;
+      left: 7%;
+    }
+    100% {
+      opacity: 1;
+      left: 0;
+    }
+  }
+  main section .animation-right {
+    position: relative;
+    -webkit-animation: animationRight 2s ease-out;
+            animation: animationRight 2s ease-out;
+  }
   main section h2 {
     text-align: center;
     margin: 0;
