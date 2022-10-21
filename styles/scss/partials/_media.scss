@@ -1,0 +1,248 @@
+@use "./mixin" as *;
+
+@media screen and (max-width: 1100px){
+    header{
+        .title-container{
+            margin-top: 70px;
+        }
+    }
+    .inner-wrapper{
+        width: 88%;
+    }
+    main{
+        section{
+            padding: 40px;
+        }
+        .skills-container{
+            ul{
+                li{
+                    width: 25%;
+                }
+                i{
+                    font-size: 2.5rem;
+                }
+            }
+        }
+        .projects{
+            .projects-image-container{
+                width: 40%;
+            }
+        }
+        .projects-border{
+            .project-content{
+                width: 60%;
+            }
+        }
+        .introduction-container .introduction-img-container{
+            width: 40%;
+        }
+        .introduction-container .introduction-text-container{
+            width: 60%;
+            margin: 0;
+            margin-left: 25px;
+            height: 100%;
+            p{
+                margin: 0 0 15px 0;
+            }
+        }
+        .contact-form{
+            textarea{
+                height: 200px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px){
+    .inner-wrapper{
+        width: 80%;
+    }
+    header{
+        .menu-bar-button{
+            visibility:visible;
+            opacity: 1;
+        }
+        .header-container{
+            padding-top: 140px;
+        }
+        .flex-container{
+            display: none;
+        }
+        label{
+            right: 100px;
+        }
+    }
+    main{
+        .introduction-container{
+            flex-direction: column;
+            .introduction-text-container{
+                margin: 40px auto 0 auto;
+                width: 95%;
+            }
+            .introduction-img-container{
+                width: 50%;
+                margin: 0;
+            }
+        }
+        .skills-container{
+            ul li{
+                width: 33.33333333333333%;
+            }
+            p{
+                text-align: center;
+            }
+        }
+        .projects-border{
+            height: 520px;
+            .project-content{
+                width: 95%;
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
+        .projects{
+            flex-direction: column;
+            justify-content: center;
+            .projects-image-container{
+                width: 60%;
+            }
+        }
+        .contact-container{
+            flex-direction: column-reverse;
+        }
+        .contact-image{
+            width: 50%;
+            margin: 45px 0 12px 0;
+        }
+        .contact-form{
+            width: 95%;
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    header{
+        .main-nav .nav-bar .serena-logo img{
+            width: 85px;
+        }
+    }
+    main{
+        section h2{
+            text-align: center;
+            margin: 0;
+            padding: 30px 0 10px 0;
+        }
+        .introduction-container{
+            .introduction-img-container{
+                width: 75%;
+            }
+        }
+        .skills-container{
+            ul i{
+                font-size: 2.2rem;
+            }
+            p{
+                font-size: clamp(0.6rem, 2.5vw, 1.1rem);
+            }
+        }
+        .projects{
+            .projects-image-container{
+                width: 95%;
+                // margin-top: 30px;
+            }
+            .github-button, .live-button{
+                padding: 6px 10px;
+                margin: 15px 10px 0 0;
+            }
+        }
+        .projects-border{
+            height: 560px;
+        }
+        .contact-image{
+            width: 85%;
+            img{
+                height: 93%;
+            }
+
+        } 
+        .contact-form{
+            input,textarea{
+                font-size: clamp(0.8rem, 1.5vw, 2rem);
+            }
+            button{
+                padding: 5px;
+            }
+            .social li{
+                margin-left: 8px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px){
+    header{
+        label{
+            right: 80px;
+        }
+        .main-nav .nav-bar .serena-logo img{
+            width: 80px;
+        }
+        .moon-picture, .sun-picture{
+            width: 150px;
+            height: 150px;
+        }
+    } 
+    main{
+        section{
+            padding: 20px;
+        }
+        .introduction-container{
+            margin: 50px 0 0 0;
+            .introduction-img-container{
+                width: 85%;
+                img{
+                    width: 95%;
+                    margin: 0;
+                }
+            }
+            .introduction-text-container{
+                margin: 20px auto 0 auto;
+                width: 100%;
+                text-align: center;
+            }
+        } 
+        .skills-container ul{
+            li{
+                width: 50%;
+                
+            }
+            i{
+                font-size: 2rem;
+            }
+        }
+        .projects-border{
+            height: 500px;
+            &:nth-child(3){
+                border: none;
+            }
+        }
+        .contact-form{
+            input{
+                height: 30px;
+            }
+            textarea{
+                height: 170px;
+            }
+            .button-container{
+                flex-direction: column;
+                button{
+                    margin-bottom: 15px;
+                }
+            }
+            .social{
+                width: 100%;
+                justify-content: space-evenly;
+            }
+        }
+    } 
+}

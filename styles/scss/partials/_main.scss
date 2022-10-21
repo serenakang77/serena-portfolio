@@ -74,8 +74,9 @@ main{
         @include right-slide-in-animation(7%, 1s);
         @include sectionFormat();
         h2{
-            margin-bottom: 30px;
+            // margin-bottom: 30px;
             border-bottom: 3px solid #74726b;
+            margin: 30px 0 0 0;
             // width: fit-content;
         }
         
@@ -85,11 +86,12 @@ main{
         .introduction-img-container{
             width: 35%;
             img{
-                height: 370px;
-                width: 300px;
+                height: auto;
+                width: 90%;
                 max-width: 100%;
                 border-radius: 41px;
                 box-shadow: 12px 8px 8px rgba(109, 103, 103, 0.3);
+                margin: 0 5%;
             }
         }
         
@@ -128,20 +130,24 @@ main{
     }
     .projects-border{
         border-bottom: 3px inset #74726b;
-        margin: 0 3% 30px 3%; 
-        height: 350px;
+        padding: 0 3%; 
+        height: 370px;
         .project-content{
-            margin-right: 15px;
+            margin: 0 15px 0 4%;
+            width: 70%;
         }
     }
     .projects{
         display: flex;
-        align-content: center;
+        align-items: center;
         height: 100%;
+        .projects-image-container{
+            width: 30%;
+        }
         img{
-            width: max(200px, 125%);
-            height: 210px;
-            margin: auto 4% auto 0;
+            // width: max(200px, 125%);
+            width: 100%;
+            height: auto;
         }
         i{
             font-size: 1.2rem;
@@ -168,12 +174,11 @@ main{
         margin: 0 auto;
         .social{
             display: flex;
-            margin-top: 20px;
             li{
-                margin-right: 30px;
+                margin-left: 15px;
             }
             i{
-                font-size: 2rem;
+                font-size: clamp(1.2rem, 2vw, 2.5rem);
                 color: #74726b;
                 transition-duration: 0.5s;
                 &:hover,&:focus{
@@ -194,12 +199,20 @@ main{
             background-color: rgba(240, 233, 241, 0.7);
             border-radius: 5px;
         }
+        textarea{
+            resize: none;
+        }
         input{
             height: 45px;
         }
+        .button-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
         button{
             width: fit-content;
-            padding: 10px 20px;
+            padding: 10px;
             align-self: center;
             border: none;
             background-color: #74726b;
@@ -215,10 +228,11 @@ main{
     }
     .contact-image{
         width: 50%;
+        margin-top: 30px;
         img{
-            width: 80%;
-            height: 600px;
-            margin: 0 10%;
+            width: 90%;
+            height: auto;
+            margin: 0 5%;
             border-radius: 40px;
             box-shadow: 12px 8px 8px rgba(109, 103, 103, 0.3);
         }
@@ -242,12 +256,3 @@ main{
 
 }
 
-footer{
-    background-color: transparent;
-    margin: 50px auto 0 auto;
-    p{
-        text-align: center;
-        margin: 0;
-        padding-bottom: 30px;
-    }
-}

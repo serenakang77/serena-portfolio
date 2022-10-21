@@ -27,15 +27,6 @@ header{
                 }
             }
         }
-        // #dark-mode-switch:checked + label{
-        // // background-color: rgba(67, 66, 66, 1);
-        // background-color: rgb(159, 120, 207);
-        // }
-        // #dark-mode-switch:checked + label #moon:before{
-        // // background-color: rgba(67, 66, 66, 1);
-        // background-color: rgb(159, 120, 207);
-        // }
-        
     }       
     &.darkmode-on{
         background-image: url(../assets/header-dark-background9.jpg);
@@ -71,8 +62,56 @@ header{
         }
         label{
             background-color: rgba(67, 66, 66, 1);
-
         }
+        .menu-bar{
+        background-color: rgba(129, 112, 23, 0.97);
+        }
+    }
+    .menu-bar{
+        width: 100%;
+        max-width: 600px;
+        visibility: hidden;
+        opacity: 0;
+        height: 100vh;
+        background-color: rgba(177, 164, 204, 0.97);
+        opacity: 0;
+        transition: visibility 0.5s, opacity 0.5s linear;
+        z-index: 100;
+        position: fixed;
+        nav{
+            width: 100%;
+            height: 100%;
+            padding: 15% 0 25% 0;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 100%;
+            li{
+                padding-bottom: 3%;
+            }
+            a{
+                font-size: 1.5rem;
+                &:hover,&:focus{
+                border-bottom: 7px solid white;
+                transition-duration: 0.5s;
+            }
+            }
+        }
+    }
+    .menu-bar-button, .close-button{
+        background-color: transparent;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+    .menu-bar-button{
+        visibility: hidden;
+    }
+    .close-button{
+        padding: 15px;
     }
     #moon:before{
         content: "";
@@ -173,23 +212,6 @@ header{
     #dark-mode-switch{
         display: none;
     }
-
-    // label{
-    //     display: block;
-    //     position: absolute;
-    //     top: 50%;
-    //     right: 0;
-    //     left: 0;
-    //     width: 80px;
-    //     height: 45px;
-    //     margin: 0 auto;
-    //     background-color: rgba(67, 66, 66, 0.5);
-    //     border-radius: 56px;
-    //     transform: translateY(-50%);
-    //     cursor: pointer;
-    //     transition: 0.3s ease background-color;
-    //     overflow: hidden;
-    // }
 
     #star{
         position: absolute;
@@ -310,27 +332,13 @@ header{
             transform: scale(0.75);
         }
     }
-    // .animation {
-    //   position: relative;
-    //   animation: animation 1.6s ease-out;
-    // }
+
     @include left-slide-in-animation(-30%, 1.2s);
     .animation-delay{
         animation: animation1 2.4s ease-out;
         position: relative;
     }
 
-    // @keyframes animation {
-    //     0% {
-    //         opacity: 0;
-    //         left: -30%;
-    //     }
-
-    //     100% {
-    //         opacity: 1;
-    //         left: 0;
-    //     }
-    //     }
     @keyframes animation1 {
     0% {
         opacity: 0;
@@ -353,12 +361,13 @@ header{
     padding-left: 100px;
     list-style: none;
     position: fixed;
-    bottom: 30px;
-    right: 2.5vw;
+    bottom: 15px;
+    right: 10px;
     li{
-        padding-top: 20px;
+        padding-top: 15px;
         a{
-            
+            font-size: clamp(1rem, 2vw, 2rem);
+            // color: #dbbaff;
         }
     }
 }

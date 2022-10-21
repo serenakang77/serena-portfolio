@@ -86,6 +86,22 @@ function contact(event){
     textElement.value = ""
 }
 
+portfolio.menuElement = document.querySelector(".menu-bar")
+portfolio.menuBarButton = document.querySelector(".menu-bar-button")
+portfolio.closeButton = document.querySelector(".close-button")
+
+portfolio.menuBarButton.addEventListener("click", function () {
+  portfolio.menuElement.style.visibility = "visible"
+  portfolio.menuElement.style.opacity = "1"
+  portfolio.menuBarButton.style.visibility = "hidden"
+})
+
+portfolio.closeButton.addEventListener("click", function () {
+  portfolio.menuBarButton.style.visibility = "visible"
+  portfolio.menuElement.style.visibility = "hidden"
+  portfolio.menuElement.style.opacity = "0"
+  portfolio.menuElement.style.transition = "visibility 0.5s, opacity 0.5s linear"
+})
 
 portfolio.events = () => {
 
