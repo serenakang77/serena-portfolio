@@ -59,7 +59,7 @@ function reveal(className, animationClassName) {
   }
 }
 
-if(window.innerWidth >= 600){
+if(window.innerWidth >= 850){
   window.addEventListener("scroll", () => {return reveal(".animation-left-selection", "animation-left")})
   window.addEventListener("scroll", () => {return reveal(".animation-right-selection", "animation-right")})
   window.addEventListener("scroll", () => {return reveal(".animation-top-selection", "animation-top")})
