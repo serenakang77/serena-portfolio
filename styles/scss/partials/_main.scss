@@ -69,9 +69,14 @@ html{
 main{
     padding-top: 50px;
     section{
-        @include top-slide-in-animation(7%, 1s);
-        @include left-slide-in-animation(-7%, 1s);
-        @include right-slide-in-animation(7%, 1s);
+        .animation-left-selection, .animation-right-selection, .animation-top-selection{
+        opacity: 0;
+        }
+        
+        // @include top-slide-in-animation(7%, 1s);
+        @include left-slide-in-animation(50px, 1s);
+        @include right-slide-in-animation(50px, 1s);
+        @include top-slide-in-animation(50px, 1s);
         @include sectionFormat();
         h2{
             // margin-bottom: 30px;

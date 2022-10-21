@@ -45,7 +45,7 @@ portfolio.darkMode = function(){
 
 function reveal(className, animationClassName) {
   let reveals = document.querySelectorAll(className)
-  console.log(reveals);
+  // console.log(reveals);
   for (let i = 0; i < reveals.length; i++) {
     let windowHeight = window.innerHeight
     let elementTop = reveals[i].getBoundingClientRect().top
@@ -59,11 +59,11 @@ function reveal(className, animationClassName) {
   }
 }
 
-if(window.innerWidth >= 850){
+// if(window.innerWidth >= 850){
   window.addEventListener("scroll", () => {return reveal(".animation-left-selection", "animation-left")})
   window.addEventListener("scroll", () => {return reveal(".animation-right-selection", "animation-right")})
   window.addEventListener("scroll", () => {return reveal(".animation-top-selection", "animation-top")})
-}
+// }
 
 
 

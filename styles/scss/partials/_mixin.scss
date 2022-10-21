@@ -21,18 +21,19 @@
     @keyframes animation {
         0% {
             opacity: 0;
-            left: $left-value;
+            transform: translateX(-$left-value);
             // left: -15%;
         }
 
         100% {
             opacity: 1;
-            left: 0;
+            transform: translateX(0);
         }
     }
     .animation-left {
-      position: relative;
-      animation: animation $animation-time ease-out;
+        position: relative;
+        animation: animation $animation-time ease-out;
+        opacity: 1;
     }
 };
 
@@ -40,18 +41,19 @@
     @keyframes animationRight {
         0% {
             opacity: 0;
-            left: $right-value;
+            transform: translateX($right-value);
             // left: -15%;
         }
 
         100% {
             opacity: 1;
-            left: 0;
+            transform: translateX(0);
         }
     }
     .animation-right {
       position: relative;
       animation: animationRight $animation-time ease-out;
+      opacity: 1;
     }
 }
 
@@ -59,16 +61,17 @@
     @keyframes animationTop {
         0% {
             opacity: 0;
-            top: $top-value;
+            transform: translateY($top-value);
         }
 
         100% {
             opacity: 1;
-            top: 0;
+            transform: translateY(0);
         }
     }
     .animation-top {
       position: relative;
       animation: animationTop $animation-time ease-out;
+      opacity: 1;
     }
 }

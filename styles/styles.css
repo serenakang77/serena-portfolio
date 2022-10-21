@@ -585,27 +585,28 @@ header .ball-shadow {
 @-webkit-keyframes animation {
   0% {
     opacity: 0;
-    left: -30%;
+    transform: translateX(30%);
   }
   100% {
     opacity: 1;
-    left: 0;
+    transform: translateX(0);
   }
 }
 @keyframes animation {
   0% {
     opacity: 0;
-    left: -30%;
+    transform: translateX(30%);
   }
   100% {
     opacity: 1;
-    left: 0;
+    transform: translateX(0);
   }
 }
 header .animation-left {
   position: relative;
   -webkit-animation: animation 1.2s ease-out;
           animation: animation 1.2s ease-out;
+  opacity: 1;
 }
 header .animation-delay {
   -webkit-animation: animation1 2.4s ease-out;
@@ -708,70 +709,76 @@ main section {
   padding: 60px;
   filter: drop-shadow(0px 0px 15px #deb1df);
 }
-@-webkit-keyframes animationTop {
-  0% {
-    opacity: 0;
-    top: 7%;
-  }
-  100% {
-    opacity: 1;
-    top: 0;
-  }
-}
-@keyframes animationTop {
-  0% {
-    opacity: 0;
-    top: 7%;
-  }
-  100% {
-    opacity: 1;
-    top: 0;
-  }
-}
-main section .animation-top {
-  position: relative;
-  -webkit-animation: animationTop 1s ease-out;
-          animation: animationTop 1s ease-out;
+main section .animation-left-selection, main section .animation-right-selection, main section .animation-top-selection {
+  opacity: 0;
 }
 @keyframes animation {
   0% {
     opacity: 0;
-    left: -7%;
+    transform: translateX(-50px);
   }
   100% {
     opacity: 1;
-    left: 0;
+    transform: translateX(0);
   }
 }
 main section .animation-left {
   position: relative;
   -webkit-animation: animation 1s ease-out;
           animation: animation 1s ease-out;
+  opacity: 1;
 }
 @-webkit-keyframes animationRight {
   0% {
     opacity: 0;
-    left: 7%;
+    transform: translateX(50px);
   }
   100% {
     opacity: 1;
-    left: 0;
+    transform: translateX(0);
   }
 }
 @keyframes animationRight {
   0% {
     opacity: 0;
-    left: 7%;
+    transform: translateX(50px);
   }
   100% {
     opacity: 1;
-    left: 0;
+    transform: translateX(0);
   }
 }
 main section .animation-right {
   position: relative;
   -webkit-animation: animationRight 1s ease-out;
           animation: animationRight 1s ease-out;
+  opacity: 1;
+}
+@-webkit-keyframes animationTop {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes animationTop {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+main section .animation-top {
+  position: relative;
+  -webkit-animation: animationTop 1s ease-out;
+          animation: animationTop 1s ease-out;
+  opacity: 1;
 }
 main section h2 {
   border-bottom: 3px solid #74726b;
