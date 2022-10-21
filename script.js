@@ -67,26 +67,26 @@ if(window.innerWidth >= 850){
 
 
 
-function contact(event){
-  event.preventDefault();
-  const inputElement = document.querySelectorAll("input")
-  console.log(inputElement);
-  const textElement = document.getElementById("message")
-  emailjs
-  .sendForm(
-      'service_ev7a5kn',
-      'template_2gyynww',
-      event.target,
-      'h8Opj6R8nMRkvcTw2'
-      ).then(() => {
-          alert("Email has been sent!")
-        }).catch(() =>{
-            alert("email is temporarily unavailable. Please contact me on serenakang77@gmail.com")
-        })
-    inputElement[0].value=""
-    inputElement[1].value=""
-    textElement.value = ""
-}
+// function contact(event){
+//   event.preventDefault();
+//   const inputElement = document.querySelectorAll("input")
+//   console.log(inputElement);
+//   const textElement = document.getElementById("message")
+//   emailjs
+//   .sendForm(
+//       'service_ev7a5kn',
+//       'template_2gyynww',
+//       event.target,
+//       'h8Opj6R8nMRkvcTw2'
+//       ).then(() => {
+//           alert("Email has been sent!")
+//         }).catch(() =>{
+//             alert("email is temporarily unavailable. Please contact me on serenakang77@gmail.com")
+//         })
+//     inputElement[0].value=""
+//     inputElement[1].value=""
+//     textElement.value = ""
+// }
 
 portfolio.menuElement = document.querySelector(".menu-bar")
 portfolio.menuBarButton = document.querySelector(".menu-bar-button")

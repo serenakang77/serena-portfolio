@@ -14,11 +14,11 @@
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
     (function(){
         emailjs.init("h8Opj6R8nMRkvcTw2");
     })();
-    </script>
+    </script> -->
 
 </head>
 <body class="main-darkmode-off">
@@ -216,15 +216,18 @@
                 <div class="contact-form animation-left-selection">
                     
                     <p>Thank you for visiting my website! If you have any questions about me or my projects, please send me a message below or email at serenakang77(at)gmail.com.</p>
-                    <form id="contact-form" onsubmit="contact(event)">
+                    <!-- <form id="contact-form" onsubmit="contact(event)"> -->
+                   <form target="_blank" action="https://formsubmit.co/your@email.com" method="POST">
                         <label class="sr-only" for="name">Enter your name</label>
-                        <input id="name" name="user-name" type="text" placeholder="Type your name" required="">
+                        <input type="text" name="name" class="form-control" placeholder="Full Name" id="name" required>
                         <label class="sr-only" for="email">Enter your email</label>
-                        <input id="email" name="user-email" type="text" placeholder="Type your email" required="">
+                        <input type="email" name="email" class="form-control" placeholder="Email Address" id="email" required>
+                        <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+                        <input type="hidden" name="_subject" value="New submission!">
                         <label class="sr-only" for="message">Write a message</label>
-                        <textarea id="message" name="message" placeholder="Type your message" required=""></textarea>
+                        <textarea placeholder="Your Message" class="form-control" name="message" rows="10" id="message" required></textarea>
                         <div class="button-container">
-                            <button class="sub-button" type="submit" id="submit-button">Send Message</button>
+                            <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
                             <div class="social">
                                 <li>
                                 <a href="mailto:serenakang77@gmail.com" aria-label="Email Link"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
