@@ -59,9 +59,11 @@ function reveal(className, animationClassName) {
   }
 }
 
-window.addEventListener("scroll", () => {return reveal(".animation-left-selection", "animation-left")})
-window.addEventListener("scroll", () => {return reveal(".animation-right-selection", "animation-right")})
-window.addEventListener("scroll", () => {return reveal(".animation-top-selection", "animation-top")})
+if(window.innerWidth >= 600){
+  window.addEventListener("scroll", () => {return reveal(".animation-left-selection", "animation-left")})
+  window.addEventListener("scroll", () => {return reveal(".animation-right-selection", "animation-right")})
+  window.addEventListener("scroll", () => {return reveal(".animation-top-selection", "animation-top")})
+}
 
 
 
