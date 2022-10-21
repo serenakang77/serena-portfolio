@@ -987,6 +987,12 @@ main .contact-image img {
   .inner-wrapper {
     width: 80%;
   }
+  header h1 {
+    text-shadow: 5px 5px rgba(173, 154, 200, 0.3);
+  }
+  header h3 {
+    text-shadow: 2px 2px rgba(173, 154, 200, 0.3);
+  }
   header .menu-bar-button {
     visibility: visible;
     opacity: 1;
