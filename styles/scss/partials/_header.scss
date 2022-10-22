@@ -1,7 +1,7 @@
 @use "./mixin" as *;
 
 header{
-    height: 100vh;
+    height: max(100vh, 30rem);
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center;

@@ -123,10 +123,6 @@ main{
                 align-items: center;
                 margin-top: 50px;
                 transition: 0.4s;
-                &:hover,&:focus{
-                    color: #bc7eff;
-                    transform: scale(1.15);
-                }
                 p{
                     text-align: center;
                 }

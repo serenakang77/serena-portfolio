@@ -307,7 +307,7 @@ button {
 }
 
 header {
-  height: 100vh;
+  height: max(100vh, 30rem);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -815,10 +815,6 @@ main .skills-container ul li {
   align-items: center;
   margin-top: 50px;
   transition: 0.4s;
-}
-main .skills-container ul li:hover, main .skills-container ul li:focus {
-  color: #bc7eff;
-  transform: scale(1.15);
 }
 main .skills-container ul li p {
   text-align: center;
