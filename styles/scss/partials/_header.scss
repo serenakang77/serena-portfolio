@@ -9,13 +9,11 @@ header{
     &.darkmode-off{
         background-image: url(../assets/header-bright-background3.jpg);
         .main-nav{
-            // background-color: rgba(10,10,10,0.3);
             background-color: rgba(177, 164, 204, 0.3);
             .nav-bar{
                 li a{
                     &:hover,&:focus{
                         color: #bc7eff;
-                        // color: #F9D71C;
                     }
                 }
             }
@@ -50,11 +48,9 @@ header{
         }
         #dark-mode-switch:checked + label{
         background-color: rgba(67, 66, 66, 1);
-        // background-color: rgb(159, 120, 207);
         }
         #dark-mode-switch:checked + label #moon:before{
         background-color: rgba(67, 66, 66, 1);
-        // background-color: rgb(159, 120, 207);
         }
         #moon:before{
             background-color: rgba(67, 66, 66, 1);
@@ -120,7 +116,6 @@ header{
         left: -18px;
         width: 40px;
         height: 40px;
-        // background-color: rgba(67, 66, 66, 1);
         background-color: rgb(159, 120, 207);
         border-radius: 50%;
         transition: 0.3s ease background-color;
@@ -130,11 +125,9 @@ header{
         position: absolute;
         top: 50%;
         right: 50px;
-        // left: 0;
         width: 80px;
         height: 45px;
         margin: 0 auto;
-        // background-color: rgba(67, 66, 66, 1);
         background-color: rgb(159, 120, 207);
         border-radius: 56px;
         transform: translateY(-50%);
@@ -146,8 +139,6 @@ header{
         width: 100%;
         position: fixed;
         z-index: 10;
-        // background-color: rgba(10,10,10,0.3);
-        // background-color: rgba(177, 164, 204, 0.3);
         .nav-bar{
             display: flex;
             justify-content: space-between;
@@ -267,7 +258,6 @@ header{
         padding-top: 15px;
         a{
             font-size: clamp(1rem, 2vw, 2rem);
-            // color: #dbbaff;
         }
     }
 }

@@ -5,22 +5,18 @@ html{
 }
 
 .main-darkmode-off{
-    // background-color: #080808;
     background: linear-gradient(90deg, hsl(199.4, 42.5%, 70%) 0%, hsla(295.8, 100%, 85.9%, 0.51) 100%);
 }
 
 .main-darkmode-on{
     background: #080808;
-    // background: linear-gradient(90deg, hsl(199.4, 42.5%, 70%) 0%, hsla(295.8, 100%, 85.9%, 0.51) 100%);
     section{
         color: white;
     }
     h1{
-        // text-shadow: 10px 10px rgba(173, 154, 200, 0.3);
         text-shadow: 10px 10px rgba(8,8,8,0.5);
     }
     h3{
-        // text-shadow: 5px 5px rgba(173, 154, 200, 0.3);
         text-shadow: 5px 5px rgba(8,8,8,0.5);
     }
     section{
@@ -29,19 +25,14 @@ html{
     }
     .skills-container{
         li{
-            &:hover,&:focus{
-                color: #f9d71c;
-                // color: #bc7eff;
-                p{
-                    text-align: center;
-                }
+            p{
+                text-align: center;
             }
         }
     }
     .project-content{
         a{
             &:hover,&:focus{
-                // background-color: #bc7eff;
                 background-color: #F9D71C;
             }
         }
@@ -50,7 +41,6 @@ html{
         button{
             &:hover,&:focus{
                 background-color: #F9D71C;
-                
             }
         }
         input, textarea{
@@ -73,16 +63,13 @@ main{
         opacity: 0;
         }
         
-        // @include top-slide-in-animation(7%, 1s);
         @include left-slide-in-animation(-70px, 1.5s);
         @include right-slide-in-animation(70px, 1.5s);
         @include top-slide-in-animation(70px, 1.5s);
         @include sectionFormat();
         h2{
-            // margin-bottom: 30px;
             border-bottom: 3px solid #74726b;
             margin: 30px 0 0 0;
-            // width: fit-content;
         }
         
     }
@@ -114,8 +101,6 @@ main{
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            // display: grid;
-            // grid-template-rows: repeat(6, 1fr);
             li{
                 display: flex;
                 width: 16.6666666667%;
@@ -149,7 +134,6 @@ main{
             width: 30%;
         }
         img{
-            // width: max(200px, 125%);
             width: 100%;
             height: auto;
         }
@@ -174,7 +158,6 @@ main{
     }
     .contact-form{
         width: 50%;
-        // width: min(90%, 500px);
         margin: 0 auto;
         .social{
             display: flex;
@@ -188,9 +171,8 @@ main{
                 &:hover,&:focus{
                 color: #bc7eff;
                 transform: scale(1.1);
+                }
             }
-            }
-
         } 
         form{
             display: flex;
@@ -241,22 +223,5 @@ main{
             box-shadow: 12px 8px 8px rgba(109, 103, 103, 0.3);
         }
     }
-    // @keyframes animation {
-    //     0% {
-    //         opacity: 0;
-    //         left: -15%;
-    //     }
-
-    //     100% {
-    //         opacity: 1;
-    //         left: 0;
-    //     }
-    // }
-    // .animation {
-    //   position: relative;
-    //   animation: animation 1.6s ease-out;
-    // }
-
-
 }
 

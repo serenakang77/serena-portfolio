@@ -678,10 +678,7 @@ html {
   background-color: #0c0c0c;
   filter: drop-shadow(0px 0px 15px #F9D71C);
 }
-.main-darkmode-on .skills-container li:hover, .main-darkmode-on .skills-container li:focus {
-  color: #f9d71c;
-}
-.main-darkmode-on .skills-container li:hover p, .main-darkmode-on .skills-container li:focus p {
+.main-darkmode-on .skills-container li p {
   text-align: center;
 }
 .main-darkmode-on .project-content a:hover, .main-darkmode-on .project-content a:focus {
