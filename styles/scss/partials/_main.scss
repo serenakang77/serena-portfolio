@@ -63,9 +63,9 @@ main{
         opacity: 0;
         }
         
-        @include left-slide-in-animation(-70px, 1.5s);
-        @include right-slide-in-animation(70px, 1.5s);
-        @include top-slide-in-animation(70px, 1.5s);
+        @include left-slide-in-animation(-50px, 1.4s);
+        @include right-slide-in-animation(50px, 1.4s);
+        @include top-slide-in-animation(50px, 1.4s);
         @include sectionFormat();
         h2{
             border-bottom: 3px solid #74726b;
