@@ -22,16 +22,16 @@ function darkMode() {
       "sun-picture ball-container moon-picture"
     ) {
       darkModeButtonElement.innerHTML = `
-          <img src="./assets/moon-picture.png" alt="🌙" class="moon-picture ball-container">
+          <img src="./assets/moon-picture.webp" alt="🌙" class="moon-picture ball-container">
           <div class="ball-shadow"></div>
           `
-      logoElement.innerHTML = `<img src=\"./assets/sk-logo.png\" alt=\"Serena Kang Logo\">`
+      logoElement.innerHTML = `<img src=\"./assets/sk-logo.webp\" alt=\"Serena Kang Logo\">`
     } else {
       darkModeButtonElement.innerHTML = `
-          <img src="./assets/sun-picture5.png" alt="🌞" class="sun-picture ball-container">
+          <img src="./assets/sun-picture.webp" alt="🌞" class="sun-picture ball-container">
           <div class="ball-shadow"></div>
           `
-      logoElement.innerHTML = `<img src=\"./assets/sk-logo-sun.png\" alt=\"Serena Kang Logo\">`
+      logoElement.innerHTML = `<img src=\"./assets/sk-logo-sun.webp\" alt=\"Serena Kang Logo\">`
     }
   })
 }
