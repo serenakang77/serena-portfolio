@@ -314,7 +314,7 @@ header {
   background-attachment: fixed;
 }
 header.darkmode-off {
-  background-image: url(../assets/header-bright-background.jpg);
+  background-image: url(../assets/header-bright-background.webp);
 }
 header.darkmode-off .main-nav {
   background-color: rgba(177, 164, 204, 0.3);
@@ -866,7 +866,7 @@ main .contact-form {
   width: 50%;
   margin: 0 auto;
 }
-main .contact-form .social {
+main .contact-form .social ul {
   display: flex;
 }
 main .contact-form .social li {

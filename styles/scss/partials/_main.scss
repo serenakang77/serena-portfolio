@@ -160,7 +160,9 @@ main{
         width: 50%;
         margin: 0 auto;
         .social{
-            display: flex;
+            ul{
+                display: flex;
+            }
             li{
                 margin-left: 15px;
             }
