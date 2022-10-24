@@ -28,7 +28,7 @@ function darkMode() {
       logoElement.innerHTML = `<img src=\"./assets/sk-logo.png\" alt=\"Serena Kang Logo\">`
     } else {
       darkModeButtonElement.innerHTML = `
-          <img src="./assets/sun-picture5.png" alt="sun image picture" class="sun-picture ball-container">
+          <img src="./assets/sun-picture5.png" alt="🌞" class="sun-picture ball-container">
           <div class="ball-shadow"></div>
           `
       logoElement.innerHTML = `<img src=\"./assets/sk-logo-sun.png\" alt=\"Serena Kang Logo\">`
