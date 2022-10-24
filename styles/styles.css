@@ -314,7 +314,7 @@ header {
   background-attachment: fixed;
 }
 header.darkmode-off {
-  background-image: url(../assets/header-bright-background3.jpg);
+  background-image: url(../assets/header-bright-background.jpg);
 }
 header.darkmode-off .main-nav {
   background-color: rgba(177, 164, 204, 0.3);
@@ -326,7 +326,7 @@ header.darkmode-off .slide-bar a:hover, header.darkmode-off .slide-bar a:focus {
   color: #bc7eff;
 }
 header.darkmode-on {
-  background-image: url(../assets/header-dark-background9.jpg);
+  background-image: url(../assets/header-dark-background.jpg);
 }
 header.darkmode-on .main-nav {
   background-color: rgba(10, 10, 10, 0.3);
@@ -710,7 +710,7 @@ main section .animation-left-selection, main section .animation-right-selection,
 @keyframes animation {
   0% {
     opacity: 0;
-    transform: translateX(-70px);
+    transform: translateX(-50px);
   }
   100% {
     opacity: 1;
@@ -719,14 +719,14 @@ main section .animation-left-selection, main section .animation-right-selection,
 }
 main section .animation-left {
   position: relative;
-  -webkit-animation: animation 1.5s ease-out;
-          animation: animation 1.5s ease-out;
+  -webkit-animation: animation 1.4s ease-out;
+          animation: animation 1.4s ease-out;
   opacity: 1;
 }
 @-webkit-keyframes animationRight {
   0% {
     opacity: 0;
-    transform: translateX(70px);
+    transform: translateX(50px);
   }
   100% {
     opacity: 1;
@@ -736,7 +736,7 @@ main section .animation-left {
 @keyframes animationRight {
   0% {
     opacity: 0;
-    transform: translateX(70px);
+    transform: translateX(50px);
   }
   100% {
     opacity: 1;
@@ -745,14 +745,14 @@ main section .animation-left {
 }
 main section .animation-right {
   position: relative;
-  -webkit-animation: animationRight 1.5s ease-out;
-          animation: animationRight 1.5s ease-out;
+  -webkit-animation: animationRight 1.4s ease-out;
+          animation: animationRight 1.4s ease-out;
   opacity: 1;
 }
 @-webkit-keyframes animationTop {
   0% {
     opacity: 0;
-    transform: translateY(70px);
+    transform: translateY(50px);
   }
   100% {
     opacity: 1;
@@ -762,7 +762,7 @@ main section .animation-right {
 @keyframes animationTop {
   0% {
     opacity: 0;
-    transform: translateY(70px);
+    transform: translateY(50px);
   }
   100% {
     opacity: 1;
@@ -771,8 +771,8 @@ main section .animation-right {
 }
 main section .animation-top {
   position: relative;
-  -webkit-animation: animationTop 1.5s ease-out;
-          animation: animationTop 1.5s ease-out;
+  -webkit-animation: animationTop 1.4s ease-out;
+          animation: animationTop 1.4s ease-out;
   opacity: 1;
 }
 main section h2 {
