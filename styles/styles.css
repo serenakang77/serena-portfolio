@@ -972,9 +972,6 @@ main .contact-image img {
     visibility: visible;
     opacity: 1;
   }
-  header .header-container {
-    padding-top: 140px;
-  }
   header .flex-container {
     display: none;
   }
