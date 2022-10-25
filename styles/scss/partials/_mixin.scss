@@ -1,11 +1,9 @@
 @mixin sectionFormat(){
      border-radius: 50px;
-    
     background-color: white;
     color: rgb(36, 36, 36);
     padding: 60px;
     filter:drop-shadow(0px 0px 15px #deb1df);
-    
 }
 
 @mixin buttonFormat(){
@@ -14,6 +12,13 @@
     margin: 15px 10px 15px 0;
     display: inline-block;
     border-radius: 10px;
+}
+
+@mixin flexFormat($justify:initial, $align:initial, $direction:row){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
 }
 
 @mixin left-slide-in-animation($left-value, $animation-time){
@@ -41,7 +46,6 @@
             opacity: 0;
             transform: translateX(-70px);
         }
-
         100% {
             opacity: 1;
             transform: translateX(0);
@@ -55,7 +59,6 @@
         animation: animation-delay 2.4s ease-out;
         position: relative;
     }
-
     @keyframes animation-delay {
     0% {
         opacity: 0;
@@ -66,7 +69,6 @@
         transform: translateX(-70px);
 
     }
-
     100% {
         opacity: 1;
         transform: translateX(0);
@@ -119,7 +121,6 @@
       border-radius: 50%;
       position: relative;
     }
-
     @keyframes floating {
         0% {
             transform: translatey(30px);
@@ -133,17 +134,16 @@
             transform: translatey(30px);
         }
     }
-    .ball-shadow {
-      width: 95px;
-      height: 30px;
-      top: 50%;
-      animation: expanding 4s infinite;
-      position: relative;
-      border-radius: 50%;
-      margin: auto;
-      box-shadow: inset 0 0 20px #fff, inset 10px 0 46px #3f51b500, inset 88px 0px 60px #ffffff99, inset -20px -60px 100px #5b43e791, inset 0 50px 140px #ffffff, 0 0 90px #39316b;
-    }
-
+    // .ball-shadow {
+    //   width: 95px;
+    //   height: 30px;
+    //   top: 50%;
+    //   animation: expanding 4s infinite;
+    //   position: relative;
+    //   border-radius: 50%;
+    //   margin: auto;
+    //   box-shadow: inset 0 0 20px #fff, inset 10px 0 46px #3f51b500, inset 88px 0px 60px #ffffff99, inset -20px -60px 100px #5b43e791, inset 0 50px 140px #ffffff, 0 0 90px #39316b;
+    // }
     @keyframes expanding {
         0%,
         100% {

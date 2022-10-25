@@ -1,4 +1,4 @@
-
+// Dark mode effect
 function darkMode() {
   const darkModeButton = document.getElementById("dark-mode-switch")
   darkModeButton.addEventListener("click", function () {
@@ -36,6 +36,7 @@ function darkMode() {
   })
 }
 
+// Scroll animation effect
 function reveal(className, animationClassName) {
   let reveals = document.querySelectorAll(className);
   for (let i = 0; i < reveals.length; i++) {
@@ -55,6 +56,7 @@ window.addEventListener("scroll", () => {return reveal(".animation-left-selectio
 window.addEventListener("scroll", () => {return reveal(".animation-right-selection", "animation-right")});
 window.addEventListener("scroll", () => {return reveal(".animation-top-selection", "animation-top")});
 
+// Menu Bar Elements
 menuElement = document.querySelector(".menu-bar");
 menuBarButton = document.querySelector(".menu-bar-button");
 closeButton = document.querySelector(".close-button");
@@ -79,7 +81,7 @@ function menuMove() {
   const website = document.querySelectorAll(".menu-bar a")
   website.forEach((data) => {
     data.addEventListener("click", function () {
-      makeMenuVisible()
+      makeMenuVisible();
     })
   })
 }

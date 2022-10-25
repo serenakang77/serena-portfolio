@@ -86,15 +86,12 @@ main{
                 margin: 0 5%;
             }
         }
-        
         .introduction-text-container{
             width: 65%;
             margin: 0px 25px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include flexFormat(center,initial, column);
+
         }
-    
     }
     .skills-container{
         ul{
@@ -208,7 +205,6 @@ main{
             cursor: pointer;
             transition-duration: 1s;
             &:hover,&:focus{
-                // background-color: #F9D71C;
                 background-color: #bc7eff;
                 transform: scale(1.1);
             }

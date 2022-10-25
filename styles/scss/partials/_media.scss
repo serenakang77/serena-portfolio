@@ -1,11 +1,6 @@
 @use "./mixin" as *;
 
 @media screen and (max-width: 1100px){
-    header{
-        .title-container{
-            margin-top: 70px;
-        }
-    }
     .inner-wrapper{
         width: 88%;
     }
