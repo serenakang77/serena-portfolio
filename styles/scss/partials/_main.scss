@@ -95,14 +95,11 @@ main{
     }
     .skills-container{
         ul{
-            display: flex;
+            @include flexFormat(space-between, initial);
             flex-wrap: wrap;
-            justify-content: space-between;
             li{
-                display: flex;
+                @include flexFormat(intial, center, column);
                 width: 16.6666666667%;
-                flex-direction: column;
-                align-items: center;
                 margin-top: 50px;
                 transition: 0.4s;
                 p{
@@ -124,8 +121,7 @@ main{
         }
     }
     .projects{
-        display: flex;
-        align-items: center;
+        @include flexFormat(initial, center);
         height: 100%;
         .projects-image-container{
             width: 30%;
@@ -150,8 +146,7 @@ main{
         }
     }
     .contact-container{
-        display: flex;
-        align-items: center;
+        @include flexFormat(initial, center);
     }
     .contact-form{
         width: 50%;
@@ -174,8 +169,7 @@ main{
             }
         } 
         form{
-            display: flex;
-            flex-direction: column;
+            @include flexFormat(initial, initial, column);
         }
         input, textarea{
             margin-bottom: 15px;
@@ -191,9 +185,7 @@ main{
             height: 45px;
         }
         .button-container{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            @include flexFormat(space-between, center);
         }
         button{
             width: fit-content;

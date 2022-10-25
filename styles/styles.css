@@ -371,9 +371,9 @@ header .menu-bar nav {
 }
 header .menu-bar ul {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
   height: 100%;
 }
 header .menu-bar ul li {
@@ -435,6 +435,7 @@ header .main-nav .nav-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
 }
 header .main-nav .nav-bar .serena-logo {
   padding-top: 5px;
@@ -465,6 +466,8 @@ header .header-image-animation img {
   font-size: 5rem;
   display: flex;
   justify-content: center;
+  align-items: initial;
+  flex-direction: row;
 }
 header .moon-picture, header .sun-picture {
   width: 180px;
@@ -480,14 +483,16 @@ header .sun-picture {
 }
 header .header-container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   position: relative;
   top: 28%;
 }
 header .title-container {
   display: flex;
+  justify-content: initial;
+  align-items: initial;
   flex-direction: column;
 }
 header #dark-mode-switch {
@@ -794,14 +799,17 @@ main .introduction-container .introduction-text-container {
 }
 main .skills-container ul {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: initial;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 main .skills-container ul li {
   display: flex;
-  width: 16.6666666667%;
-  flex-direction: column;
+  justify-content: intial;
   align-items: center;
+  flex-direction: column;
+  width: 16.6666666667%;
   margin-top: 50px;
   transition: 0.4s;
 }
@@ -822,7 +830,9 @@ main .projects-border .project-content {
 }
 main .projects {
   display: flex;
+  justify-content: initial;
   align-items: center;
+  flex-direction: row;
   height: 100%;
 }
 main .projects .projects-image-container {
@@ -852,7 +862,9 @@ main .projects a:hover, main .projects a:focus {
 }
 main .contact-container {
   display: flex;
+  justify-content: initial;
   align-items: center;
+  flex-direction: row;
 }
 main .contact-form {
   width: 50%;
@@ -875,6 +887,8 @@ main .contact-form .social i:hover, main .contact-form .social i:focus {
 }
 main .contact-form form {
   display: flex;
+  justify-content: initial;
+  align-items: initial;
   flex-direction: column;
 }
 main .contact-form input, main .contact-form textarea {
@@ -894,6 +908,7 @@ main .contact-form .button-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
 }
 main .contact-form button {
   width: -webkit-fit-content;
