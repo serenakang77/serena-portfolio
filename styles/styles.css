@@ -322,9 +322,6 @@ header.darkmode-off .main-nav {
 header.darkmode-off .main-nav .nav-bar li a:hover, header.darkmode-off .main-nav .nav-bar li a:focus {
   color: #bc7eff;
 }
-header.darkmode-off .slide-bar a:hover, header.darkmode-off .slide-bar a:focus {
-  color: #bc7eff;
-}
 header.darkmode-on {
   background-image: url(../assets/header-dark-background.webp);
 }
@@ -332,9 +329,6 @@ header.darkmode-on .main-nav {
   background-color: rgba(10, 10, 10, 0.3);
 }
 header.darkmode-on .main-nav .nav-bar li a:hover, header.darkmode-on .main-nav .nav-bar li a:focus {
-  color: #F9D71C;
-}
-header.darkmode-on .slide-bar li a:hover, header.darkmode-on .slide-bar li a:focus {
   color: #F9D71C;
 }
 header.darkmode-on #dark-mode-switch:checked + label {
@@ -634,20 +628,6 @@ header .animation-delay {
     opacity: 1;
     transform: translateX(0);
   }
-}
-
-.slide-bar {
-  padding-left: 100px;
-  list-style: none;
-  position: fixed;
-  bottom: 15px;
-  right: 10px;
-}
-.slide-bar li {
-  padding-top: 15px;
-}
-.slide-bar li a {
-  font-size: clamp(1rem, 2vw, 2rem);
 }
 
 html {

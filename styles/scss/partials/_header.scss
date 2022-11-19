@@ -18,13 +18,6 @@ header{
                 }
             }
         }
-        .slide-bar{
-            a{
-                &:hover,&:focus{
-                    color: #bc7eff;
-                }
-            }
-        }
     }       
     &.darkmode-on{
         background-image: url(../assets/header-dark-background.webp);
@@ -35,13 +28,6 @@ header{
                     &:hover,&:focus{
                         color: #F9D71C;
                     }
-                }
-            }
-        }
-        .slide-bar{
-            li a{
-                &:hover,&:focus{
-                    color: #F9D71C;
                 }
             }
         }
@@ -234,19 +220,7 @@ header{
     @include header-left-animation(1.2s);
 }
 
-.slide-bar{
-    padding-left: 100px;
-    list-style: none;
-    position: fixed;
-    bottom: 15px;
-    right: 10px;
-    li{
-        padding-top: 15px;
-        a{
-            font-size: clamp(1rem, 2vw, 2rem);
-        }
-    }
-}
+
 
 
 

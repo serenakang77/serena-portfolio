@@ -36,7 +36,7 @@ function darkMode() {
   })
 }
 
-// Scroll animation effect
+// Scroll animation effect (Will not use this for now)
 function reveal(className, animationClassName) {
   let reveals = document.querySelectorAll(className);
   for (let i = 0; i < reveals.length; i++) {
