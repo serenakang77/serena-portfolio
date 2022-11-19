@@ -36,26 +36,6 @@ function darkMode() {
   })
 }
 
-// Scroll animation effect (Will not use this for now)
-function reveal(className, animationClassName) {
-  let reveals = document.querySelectorAll(className);
-  for (let i = 0; i < reveals.length; i++) {
-    let windowHeight = window.innerHeight;
-    let elementTop = reveals[i].getBoundingClientRect().top;
-    let elementVisible = 150;
-
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add(animationClassName);
-    } else {
-      reveals[i].classList.remove(animationClassName);
-    }
-  }
-}
-
-window.addEventListener("scroll", () => {return reveal(".animation-left-selection", "animation-left")});
-window.addEventListener("scroll", () => {return reveal(".animation-right-selection", "animation-right")});
-window.addEventListener("scroll", () => {return reveal(".animation-top-selection", "animation-top")});
-
 // Menu Bar Elements
 menuElement = document.querySelector(".menu-bar");
 menuBarButton = document.querySelector(".menu-bar-button");

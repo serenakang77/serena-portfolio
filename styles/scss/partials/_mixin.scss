@@ -21,25 +21,6 @@
     flex-direction: $direction;
 }
 
-@mixin left-slide-in-animation($left-value, $animation-time){
-    @keyframes animation {
-        0% {
-            opacity: 0;
-            transform: translateX($left-value);
-        }
-
-        100% {
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
-    .animation-left {
-        position: relative;
-        animation: animation $animation-time ease-out;
-        opacity: 1;
-    }
-};
-
 @mixin header-left-animation($animation-time){
     @keyframes animation {
         0% {
@@ -75,44 +56,6 @@
     }
     }
 };
-
-@mixin right-slide-in-animation($right-value, $animation-time){
-    @keyframes animationRight {
-        0% {
-            opacity: 0;
-            transform: translateX($right-value);
-        }
-
-        100% {
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
-    .animation-right {
-      position: relative;
-      animation: animationRight $animation-time ease-out;
-      opacity: 1;
-    }
-}
-
-@mixin top-slide-in-animation($top-value, $animation-time){
-    @keyframes animationTop {
-        0% {
-            opacity: 0;
-            transform: translateY($top-value);
-        }
-
-        100% {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-    .animation-top {
-      position: relative;
-      animation: animationTop $animation-time ease-out;
-      opacity: 1;
-    }
-}
 
 @mixin moon-animation(){
     .ball-container {
